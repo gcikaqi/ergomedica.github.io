@@ -75,9 +75,6 @@
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
   @apply rounded-sm;
-  border-color: var(--red-ergomedica);
-  border-radius: 0.125rem;
-  border-bottom-width: 2px;
 }
 
 #button-4 {
@@ -175,7 +172,7 @@
   //width: 100%;
 }
 
-.menu-item:active {
+.menu-item-active {
   color: var(--red-ergomedica);
   border-color: var(--red-ergomedica);
   border-radius: 0.125rem;

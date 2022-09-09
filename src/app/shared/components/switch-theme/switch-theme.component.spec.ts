@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { SwitchThemeComponent } from './switch-theme.component';
 
 describe('SwitchThemeComponent', () => {
