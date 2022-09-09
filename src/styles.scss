@@ -1,0 +1,136 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'aos/dist/aos.css';
+
+// generals
+:root {
+  --red-ergomedica: #d62828;
+  --dark-color: #2b2b2b;
+}
+
+body {
+  @apply text-black dark:text-white bg-white dark:bg-dark font-extralight;
+}
+
+h1 {
+  @apply text-center text-4xl sm:text-6xl py-3 md:py-5 lg:py-6;
+}
+
+h2 {
+  @apply text-center text-xl sm:text-3xl py-2;
+}
+
+p {
+  @apply text-justify text-base sm:text-xl py-1;
+}
+
+.custom-link {
+  @apply custom-text-green cursor-pointer inline-block;
+}
+
+.anchor {
+  @apply relative bottom-40;
+}
+
+.custom-text-green {
+  @apply font-semibold;
+  color: var(--red-ergomedica);
+}
+
+.custom-container {
+  @apply px-6 sm:px-10 md:px-16 py-6 mb-32 bg-white dark:bg-dark;
+}
+
+.custom-container-opacity {
+  @apply px-6 sm:px-10 md:px-16 py-6 bg-white dark:bg-dark opacity-80;
+}
+
+.custom-shadow-bottom {
+  -webkit-box-shadow: 0px 3px 15px 0px rgba(50, 50, 50, 0.1);
+  -moz-box-shadow: 0px 3px 15px 0px rgba(50, 50, 50, 0.1);
+  box-shadow: 0px 3px 15px 0px rgba(50, 50, 50, 0.1);
+}
+
+.custom-shadow-top {
+  -webkit-box-shadow: 0px -3px 15px 0px rgba(50, 50, 50, 0.1);
+  -moz-box-shadow: 0px -3px 15px 0px rgba(50, 50, 50, 0.1);
+  box-shadow: 0px -3px 15px 0px rgba(50, 50, 50, 0.1);
+}
+
+.custom-subpage-title {
+  @apply font-normal pt-4 pb-0;
+}
+
+.section-title {
+  @apply text-justify pb-4 text-lg sm:text-2xl font-light flex items-center justify-center;
+}
+
+.section-item {
+  @apply font-extralight text-base sm:text-xl pb-2;
+}
+
+.card-image-container {
+  @apply px-6 py-12 md:py-24 w-full flex items-center justify-center;
+}
+
+.custom-card-item {
+  @apply flex px-2 py-2 flex-1 items-center max-w-lg;
+}
+
+.custom-card-bordered {
+  @apply border w-full max-w-4xl;
+  border-color: var(--red-ergomedica);
+}
+
+// parallax effect
+
+.parallax-wrapper {
+  //@apply h-screen overflow-x-hidden overflow-y-auto;
+  //perspective: 2px;
+}
+
+.section {
+  @apply min-h-screen relative flex items-center justify-center pt-10;
+}
+
+.parallax::after {
+  //@apply absolute inset-0;
+  //content: " ";
+  //transform: translateZ(-1px) scale(1.5);
+  //z-index: -1;
+}
+
+// animations
+
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}

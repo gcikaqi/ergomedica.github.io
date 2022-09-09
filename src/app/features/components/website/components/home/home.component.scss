@@ -1,0 +1,44 @@
+.background-dark::after {
+  background-image: url("../../../../../../assets/images/bg_bggenerator_com.png");
+  background-position: center;
+  background-size: contain;
+}
+
+.background-light::after {
+  background: url("../../../../../../assets/images/bg_bggenerator_com.png") no-repeat center;
+  background-size: contain;
+}
+
+#index {
+  @apply mt-0;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: absolute;
+  bottom: 0;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+video {
+  object-fit: cover;
+  background-size: cover;
+  width: 103.5%;
+  height: 100%;
+  visibility: inherit;
+  opacity: 1;
+  display: block;
+  top: 0px;
+  left: -10.7501%;
+}
+
+.shadow-on-video {
+  background: rgba(0, 0, 0, 0.5);
+}

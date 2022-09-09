@@ -1,0 +1,27 @@
+<!--<div [ngClass]="switchThemeServices.isDarkMode ? 'background-dark' : 'background-light'" class="section parallax"-->
+<!--     id="index">-->
+
+<!--  <div class="custom-container-opacity sm:p-20 absolute top-1/3">-->
+<!--    <h1 class="custom-text-green" >ERGOMEDICA S.R.L</h1>-->
+<!--    <h2>Medicina del lavoro, Padova</h2>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<video autoplay id="myVideo" loop muted>-->
+<!--  <source src="../../../../../../assets/video/ergomedica.mp4" type="video/mp4">-->
+<!--</video>-->
+<!--<app-switch-theme></app-switch-theme>-->
+
+<!-- The video -->
+<video autoplay id="myVideo" loop muted>
+  <source src="../../../../../../assets/video/ergomedica.mp4" type="video/mp4" />
+  <source src="../../../../../../assets/video/ergomedica.ogg" type="video/ogg" />
+  <source src="../../../../../../assets/video/ergomedica.webm" type="video/webm" />
+</video>
+
+<div [ngClass]="switchThemeServices.isDarkMode ? 'background: shadow-on-video' : ''" class="content" id="index">
+  <app-switch-theme></app-switch-theme>
+  <div class="p-20" data-aos="fade-up" data-aos-duration="800">
+    <img alt="ergonomica-logo" src="assets/ergonomica-logo.png" />
+    <h2>Medicina del lavoro, Padova</h2>
+  </div>
+</div>
